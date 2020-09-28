@@ -16,14 +16,14 @@ function setUserName() {
       setUserName();
     } else {
       localStorage.setItem('name', myName);
-      myHeading.innerHTML = 'Mozilla is cool, ' + myName;
+      myHeading.innerHTML = 'Welcome, ' + myName;
     }
   }
   if(!localStorage.getItem('name')) {
     setUserName();
   } else {
     let storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Mozilla is cool, ' + storedName;
+    myHeading.textContent = 'Welcome, ' + storedName;
   }
   myButton.onclick = function() {
     setUserName();
